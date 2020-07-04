@@ -1,5 +1,31 @@
 hello jsrocket
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<h1>Javascript Testing Page</h1>
+
+<body>
+<p>Use this page to test out javascript code</p>
+
+<p id="demo"></p>
 
 <script type="text/javascript">
-	console.log('hello there!');
+	var fruits, test, fLen, i;
+	fruits=["Banana","Apple","Orange","Pear"];
+	fLen=fruits.length;
+
+	text="<ul>";
+	for (i=0; i < fLen; i++) {
+		text += "<li>" + fruits[i] + "</li>"
+	}
+	text+="</ul>"
+
+document.getElementById("demo").innerHTML = text ;
+
 </script>
+
+</body>
+</html>
